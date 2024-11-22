@@ -21,7 +21,7 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
       <div className="pokemonCard__types">
         {pokemon.types.map((t) => (
           <span 
-            key={`${pokemon.id}-${t.type.name}`}
+            key={t.type.name}
             className="pokemonCard__type"
           >
             {t.type.name}
