@@ -10,7 +10,6 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
     <div 
       id="pokemon-card"
       className="pokemonCard"
-      style={{ viewTransitionName: `pokemon-${pokemon.id}-details` }}
     >
       <img
         src={pokemon.sprites.front_default}
