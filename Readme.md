@@ -1,8 +1,8 @@
 # Pokemons App
 
-## Search for your favorite pokemon
+- Search for your favorite pokemon
 
-# Built with React, Typescript, and PokeAPI
+- Built with React, Typescript, and PokeAPI
 
 Demo:
 
