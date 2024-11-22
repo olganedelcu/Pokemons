@@ -1,10 +1,3 @@
-export interface PokemonListResponse {
-  count: number;
-  next: string | null;
-  previous: string | null;
-  results: SimplePokemon[];
-}
-
 export interface SimplePokemon {
   name: string;
   url: string;
@@ -22,29 +15,13 @@ export interface PokemonBasicDetails {
     };
   }[];
 }
-
-export interface ApiResponse<T> {
-  data: T | null;
-  error: string | null;
-  isLoading: boolean;
-}
-
-export interface CheckboxProps {
-  label: string;
-  checked: boolean;
-  onChange: (checked: boolean) => void;
-}
-
+// search input component
 export interface FormInputProps {
   value: string;
   onChange: (value: string) => void;
   placeholder?: string;
 }
-
-export interface SearchProps {
-  onSearch: (searchTerm: string) => void;
-}
-
+// pokemon card component, ui
 export interface Pokemon {
   id: number;
   name: string;
@@ -56,6 +33,7 @@ export interface SearchProps {
   onSearch: (term: string) => void;
 }
 
+// pokemon list components props
 export interface PokemonListProps {
   pokemon: Pokemon[];
   isLoading: boolean;
