@@ -12,7 +12,6 @@ export function PokemonItem({ pokemon, isSelected, onClick }: PokemonItemProps) 
       id="pokemon-item"
       className={`pokemonItem ${isSelected ? 'selected' : ''}`}
       onClick={onClick}
-      style={{ viewTransitionName: `pokemon-${pokemon.name}` }}
     >
       <span className="pokemonItem__name">{pokemon.name}</span>
     </div>
