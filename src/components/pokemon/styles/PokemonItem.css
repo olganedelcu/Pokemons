@@ -1,0 +1,25 @@
+.pokemonItem {
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    background-color: var(--background-color);
+    border: 1px solid #bc9ef8;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: capitalize;
+    view-transition-name: pokemon-item;
+  }
+  
+  .pokemonItem:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .pokemonItem.selected {
+    border-color: var(--primary-color);
+    background-color: var(--surface-color);
+  }
+  
+  .pokemonItem__name {
+    font-size: 16px;
+    color: var(--text-primary);
+  }

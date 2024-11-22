@@ -1,0 +1,23 @@
+.header {
+  padding: 1rem 2rem;
+  background-color: white;
+  border-bottom: 1px solid #c8b2f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header h1 {
+  font-size: 24px;
+  color: #c0a5f5;
+}
+
+.header .formInput {
+  max-width: 300px;
+  background-color: white;
+  color: #1a202c;
+  border: 1px solid #c8b1f6;
+}

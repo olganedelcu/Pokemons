@@ -1,0 +1,38 @@
+.pokemonCard {
+  background-color: var(--background-color);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  max-width: 400px;  
+  width: 100%;
+}
+
+.pokemonCard__image {
+  width: 10rem;
+  height: 16rem;
+  object-fit: contain;
+  margin-bottom: var(--spacing-lg);
+}
+
+.pokemonCard__name {
+  font-size: 2rem;
+  color: var(--text-primary);
+  text-transform: capitalize;
+  margin-bottom: var(--spacing-lg);
+}
+
+.pokemonCard__types {
+  display: flex;
+  gap: var(--spacing-sm);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pokemonCard__type {
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--border-radius-lg);
+  color: white;
+  background: rgba(157, 108, 255, 0.9);  
+  text-transform: capitalize;
+}
