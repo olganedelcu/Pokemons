@@ -3,7 +3,7 @@ import express from 'express'
 
 // Constants
 const isProduction = process.env.NODE_ENV === 'production'
-const port = process.env.PORT || 5173
+const port = process.env.PORT || process.env.VERCEL_URL || 5173
 const base = process.env.BASE || '/'
 
 // Cached production assets
@@ -66,6 +66,11 @@ app.use('*all', async (req, res) => {
 })
 
 // Start http server
-app.listen(port, () => {
-  console.log(`Server started at http://localhost:${port}`)
-})
+if (!process.env.VERCEL) {
+  app.listen(port, () => {
+    console.log(`Server started at http://localhost:${port}`)
+  })
+}
+
+// Add export for Vercel
+export default app
